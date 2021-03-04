@@ -1,0 +1,94 @@
+$bg-color: #22304f;
+$color-red: #de3c4b;
+$main-text-color: #fff;
+$success-message-color: #4aa84a;
+$dark-text-color: #000;
+
+body{
+    background-color: $bg-color;
+    color: $main-text-color;
+    padding-top: 4.5em;
+    font-family: CalibreWeb,sans-serif;
+    height: 100vh;
+
+   a{
+        color: $color-red;
+   }
+}
+.info{
+    font-size: 24px;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.contact-form{
+    label{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .label:not(:last-child){
+        margin-bottom: .5em;
+    }
+    
+    textarea{
+        max-height: 40em;
+        min-height: 8em;
+    }
+    .checkbox{
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+        -ms-flex: 0 0 24px;
+        flex: 0 0 24px;
+    }
+        
+}
+.form-control{
+    border-radius: 0;
+}
+textarea.fixed-textarea{
+    resize: none;
+}
+.checkbox-label{
+    font-size: 16px;
+    opacity: .8;
+    color: $main-text-color;
+    display: inline;
+}
+
+.btn-danger{
+    background-color: $color-red;
+    border-color: transparent;
+    color: $main-text-color;
+    padding: 13px 30px;
+    height: auto;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+.country-select{
+    background-color: $main-text-color;
+    color: $dark-text-color;
+    border: none;
+    height: 38px;
+}
+
+.alert-custom{
+    background-color: $bg-color;
+    border-color: $main-text-color;
+    color: $main-text-color;
+
+    i{
+        font-size: 48px;
+        border: 1px solid $success-message-color;
+        border-radius: 100%;
+        padding: 0.2em;
+        color: $success-message-color;
+    }
+
+    
+}
